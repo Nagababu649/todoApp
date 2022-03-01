@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  height:100vh;
+ background-size: cover;
+ background-color: #49d6e0;
+
+  padding: 1rem;
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 520px;
+  min-height: 560px;
+  background-color: #49d6e0;
+ 
+  text-align: center;
+  margin: 12px auto;
+  border-radius: 10px;
+  padding: 0 0.2rem 32px;
+  
+}
+
+h1 {
+  margin: 32px 0;
+  color: #4a4c51
+  ;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(39, 122, 155);
+  outline: none;
+  width: 70%;
+  background: transparent;
+  color: #4a4c51 ;
+}
+.todo-input.update{
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(39, 122, 155);
+  outline: none;
+  width: 40%;
+  background: transparent;
+  color: #4a4c51 
+}
+.popup{
+  
+    border: 1px solid rgb(93, 186, 214);
+    background: rgb(46, 155, 206);
+    text-align: center;
+    height: 50%;
+    width: 50%; 
+    
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    margin: auto;
+}
+.close{
+  float: right;
+  padding: 6px;
+  border-radius: 40%;
+  background-color: rgb(243, 240, 240);
+}
+
+.todo-input::placeholder {
+  color: #4a4c51
+  ;
+}
+
+.todo-button {
+  padding: 15px;
+  /* border: none; */
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(83, 65, 247); 
+  border-style: solid;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+
+.todo-button.edit {
+  background: rgb(14, 185, 100);
+  
+  border-radius: 5px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: rgb(39, 36, 36);
+  
+border-style: solid;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+ 
+}
+
+.delete-icon {
+  padding: 2px 6px;
+  color: #fff;
+  background-color:rgba(252, 154, 7, 0.986);
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.edit-icon {
+  padding: 2px 9px;
+  color: #fff;
+  background-color:  rgb(224, 18, 190);
+  border-style: solid;
+  border-radius: 5px;
+}
